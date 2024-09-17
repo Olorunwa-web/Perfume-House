@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+@font-face{
+  font-family: neurial-grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Regular.otf');
+
+}
+
+
+:root{
+  --purple:#8D34FF;
+  --login-bgrc: rgba(230,210,255,1);
+  --off-white:#FEFEFF;
+  
+}
+
+
+
+/* Nav  */
+
+nav h2{
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-size: 28.33px;
+  color: #000000;
+}
+
+.login-btn{
+  background-color: var(--login-bgrc);
+  color: var(--purple);
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  width: 140px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: neurial-grotesk;
+}
+
+.sign-up-btn{
+  background-color: var(--purple);
+  color: #F5F5F5;
+  border-radius: 8px;
+  border: none;
+  height: 61px;
+  font-weight: 500;
+  font-size: 20px;
+  width: 140px;
+  font-family: neurial-grotesk;
+}

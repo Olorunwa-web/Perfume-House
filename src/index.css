@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @font-face{
   font-family: neurial-grotesk;
@@ -12,6 +15,7 @@
   --purple:#8D34FF;
   --login-bgrc: rgba(230,210,255,1);
   --off-white:#FEFEFF;
+  --ff-outfit:"Outfit", sans-serif;
   
 }
 
@@ -48,4 +52,251 @@ nav h2{
   font-size: 20px;
   width: 140px;
   font-family: neurial-grotesk;
+}
+
+/* auth-signin */
+
+.sign-in-container{
+  background-image: url('./assets/13625 1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card-container{
+  width: 30%;
+}
+
+.card-img{
+  height: 256.62px;
+  width: 256.62px;
+}
+
+.card-title{
+  font-size: 15.97px;
+  font-weight: 700;
+  font-family: neurial-grotesk;
+}
+
+.add-to-cart-btn{
+  background-color: var(--purple);
+  color: var(--off-white);
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.gap{
+  gap: 13rem;
+}
+
+.gaps{
+  gap: 13rem;
+}
+
+.perf h2{
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-size: 28.33px;
+  color: #FFFFFF;
+  
+}
+.forms{
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 2.4rem 3.5rem;
+}
+
+
+
+.form h1{
+  font-size: 28px;
+  font-weight: 700;
+  color: #181A20;
+  font-family: neurial-grotesk;
+  line-height: 33.6px;
+}
+
+.form p {
+  font-family: neurial-grotesk;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+label{
+  font-family: neurial-grotesk;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 5px;
+  color: #181A20;
+}
+
+.input-group{
+  width: 100%;
+  height: 49px;
+  border-radius: 5px;
+  border: 2.5px solid #DEDFE0 ;
+  outline: none;
+
+}
+input{
+  padding-left: 20px;
+}
+input::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: neurial-grotesk;
+  color:  #2632388F;
+}
+
+.input-groups{
+  width: 100%;
+  height: 54.3px;
+  border-radius: 5px;
+  border: 2.5px solid #DEDFE0 ;
+  outline: none;
+}
+
+.agree p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: neurial-grotesk;
+}
+
+.checkbox{
+  background-color: #8D34FF;
+  
+}
+
+span {
+  color: #8D34FF;
+}
+
+.bttn{
+  height: 64px;
+  background-color: #8D34FF;
+  border-radius: 15px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: neurial-grotesk;
+
+
+}
+.bttn2{
+  height: 64px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+  font-family: neurial-grotesk;
+  background-image: url('./assets/🦆 icon _google_.svg');
+  background-repeat: no-repeat;
+  background-position: 20% 52%;
+  padding-left: 20px;
+}
+
+.bttn3{
+  height: 64px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+  font-family: neurial-grotesk;
+  background-image: url('./assets/🦆 icon _google_.svg');
+  background-repeat: no-repeat;
+  background-position: 11% 52%;
+  padding-left: 29px;
+
+}
+
+.forgot p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: neurial-grotesk;
+  color: #EC5E5E;
+}
+
+@media (max-width:767px){
+
+  .sign-in-container{
+    background-image: none;
+  }
+
+  .perf img {
+    display: none;
+  }
+
+  .perf h2{
+    display: none;
+
+  }
+
+  .card-container{
+    min-width: 98%;
+  }
+
+  .card-title{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+
+  .card-img{
+    height: 335.55px;
+    width: 335.55px;
+  }
+  
+  .forms{
+    padding: 0;
+    
+  }
+
+
+  .bttn2{
+    font-size: 18px;
+    padding-left: 40px;
+    background-position: 21% 51%;
+  }
+
+  .bttn3{
+    font-size: 18px;
+    padding-left: 40px;
+    background-position: 21% 51%;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  .card-container{
+    min-width: 40%;
+  }
+  
+  .card-img{
+    height: 335.55px;
+    width: 335.55px;
+  }
+  .bttn2{
+    padding:0;
+    background-position: 25% 52%;
+  }
+
+  .bttn3{
+    padding:0;
+    background-position: 25% 53%;
+  }
+  .forms{
+    margin-top: 20px;
+  }
 }

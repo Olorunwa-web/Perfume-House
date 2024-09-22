@@ -18,7 +18,7 @@ const Product = () => {
                 <Card.Body>
                   <Card.Title className = "card-title">{title}</Card.Title>
                   <div className = "d-flex gap-1">
-                      <div className = "pt-1">
+                      <div>
                           <img src= {ratingImg} alt="rating-img"/>
                           <img src= {ratingImg} alt="rating-img"/>
                           <img src= {ratingImg} alt="rating-img"/>
@@ -26,13 +26,13 @@ const Product = () => {
                           <img src= {ratingImg} alt="rating-img"/>
                       </div>
                       <div className = "d-flex gap-2 pt-2 ">
-                          <p>{rating}</p>
-                          <p>({(rateCount)})</p>
+                          <p className = "rating">{rating}</p>
+                          <p className = "rate">({(rateCount)})</p>
                       </div>
                   </div>
                   <Card.Text className = "d-flex gap-2 card-price">
-                    #{price}
-                    <span className = "text-decoration-line-through card-discount-price"> #{discountPrice}</span>
+                    N{price}
+                    <span className = "text-decoration-line-through card-discount-price"> N{discountPrice}</span>
                   </Card.Text>
                   <button className = "w-100 add-to-cart-btn">Add to cart</button>
                 </Card.Body>

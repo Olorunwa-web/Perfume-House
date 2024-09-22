@@ -1,10 +1,58 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import products from "../Product.json";
+
+
 
 const Cart = () => {
+    console.log(products);
+
     return (
         <>
-        <main>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloremque ducimus perspiciatis expedita id, reiciendis possimus voluptas esse mollitia ea nam accusamus quidem aut suscipit ex, ipsam modi corrupti sapiente magnam, porro laborum officia eius eligendi velit! Inventore, repudiandae similique. Asperiores repellat vitae consectetur debitis minus odio nobis eaque voluptatibus commodi ex a beatae, ipsa molestiae facilis? Reprehenderit ab quisquam excepturi rerum voluptatem, et dicta eius unde quo. Officia laboriosam obcaecati natus dignissimos adipisci temporibus. Aspernatur nobis, rem consequuntur at reprehenderit, recusandae quaerat laborum eos aperiam, corporis eius ducimus quia eligendi. Ullam voluptas deleniti fuga eius. Nihil reiciendis enim iusto.</p>
+        <main className = "cart container p-4 ">
+            <h2 className = 'preview py-1'>My Cart Preview</h2>
+            {products.map((product) =>{
+                const {image,id,title,price} = product;
+            return(
+                <>
+                  <div key = {id} className = "d-flex  justify-content-between parent my-4 ">
+                      <div className = "d-flex gap-3 justify-content-center align-items-center Gaps " >
+                        <div className = 'images'>
+                          <img src= {image} alt="image" className = "img"/>
+                        </div>
+                        <div className = "words">
+                          <p className = "prev">{title}</p>
+                           <div className = "d-flex gap-2 move">
+                              <button className = "btns">-</button>
+                              <p className = "number">1</p>
+                              <button className = "btnss">+</button>
+                          </div> 
+                          {/* <span><button className = "btns">-</button> 1 <button className = "btns">+</button></span> */}
+                          <div className = "d-flex justify-content-between  price">
+                              <p>N{price}</p>
+                              <button>Remove</button>
+                          </div>
+                       </div>
+                      </div>
+                  </div>
+                </>
+            )
+            })}
+            <div className = "my-2 py-2">
+                <div className = "prices d-flex justify-content-between">
+                    <p>Sub Total</p>
+                    <h1>18,000</h1>
+                </div>
+                <div className = "prices d-flex justify-content-between"> 
+                    <p>Delivery</p>
+                    <h1>2,000</h1>
+                </div>
+                <div className = 'prices d-flex justify-content-between'>
+                    <p>Total</p>
+                    <h1>20,000</h1>
+                </div>
+            </div>
+            <Link className = "order-btn" to = "/auth/order" ><button className = "order-btn">Confirm Order</button></Link>
         </main> 
         </>
     )

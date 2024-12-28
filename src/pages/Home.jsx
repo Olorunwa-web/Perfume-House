@@ -16,7 +16,7 @@ const Home = () => {
                     <div className = 'col-lg-8'>
                         <Product/>
                     </div>
-                    <div className = 'col-lg-4'>
+                    <div className = 'col-lg-4 pt-2'>
                         <Cart/>
                     </div>
                 </section>

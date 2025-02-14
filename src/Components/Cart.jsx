@@ -152,9 +152,9 @@ const Cart = () => {
                         <div className = "words">
                           <p className = "prev">{title}</p>
                            <div className = "d-flex gap-2 move">
-                              <button onClick={() => updateQuantity(time.id, -1)} className = "btns">-</button>
+                              <button onClick={() => updateQuantity(time.id, -1)} className = "btns"><span>-</span></button>
                                  <p className = "number">{time.quantity}</p>
-                              <button  onClick={() => updateQuantity(time.id, 1)} className = "btnss">+</button>
+                              <button  onClick={() => updateQuantity(time.id, 1)} className = "btnss"><span>+</span></button>
                           </div> 
                           {/* <span><button className = "btns">-</button> 1 <button className = "btns">+</button></span> */}
                           <div className = "d-flex justify-content-between  price">

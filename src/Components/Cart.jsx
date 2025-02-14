@@ -152,7 +152,7 @@ const Cart = () => {
                         <div className = "words">
                           <p className = "prev">{title}</p>
                            <div className = "d-flex gap-2 move">
-                              <button className = "btns" ><span>-</span></button>
+                              <button className = "btns" onClick={() => updateQuantity(time.id, -1)}><span>-</span></button>
                                  <p className = "number">{time.quantity}</p>
                               <button className = "btnss" onClick={() => updateQuantity(time.id, 1)}><span>+</span></button>
                           </div> 

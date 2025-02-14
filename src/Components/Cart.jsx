@@ -72,28 +72,28 @@ const Cart = () => {
             id:1,
             image:"https://res.cloudinary.com/dfzi0rkjs/image/upload/v1726660659/Ralph_lauren_ceqrud.png",
             title:"Ralph Lauren Perfume",
-            price: 3000,
+            price: 4000,
             quantity: 1
         },
         {
             id:2,
             image:"https://res.cloudinary.com/dfzi0rkjs/image/upload/v1726660682/Frank_Oliver_oehmb6.png",
             title:"Oud Touch Franck Oliver",
-            price: 3000,
+            price: 5300,
             quantity: 1
         },
         {
             id:3,
             image:"https://res.cloudinary.com/dfzi0rkjs/image/upload/v1726660682/Elegance_j0v3va.png",
             title:"Elegance Essence",
-            price: 3000,
+            price: 8210,
             quantity: 1
         },
         {
             id:4,
             image:"https://res.cloudinary.com/dfzi0rkjs/image/upload/v1726660680/Timeless_acblod.png",
             title:"Timeless Bouquet",
-            price:3000,
+            price:6400,
             quantity: 1
         },
         {
@@ -107,7 +107,7 @@ const Cart = () => {
             id:6,
             image:"https://res.cloudinary.com/dfzi0rkjs/image/upload/v1726660683/Asad_Mousef_ndyamm.png",
             title:"Asad Mousouff",
-            price: 3000,
+            price: 9200,
             quantity: 1
         }
     ]
@@ -152,7 +152,7 @@ const Cart = () => {
                         <div className = "words">
                           <p className = "prev">{title}</p>
                            <div className = "d-flex gap-2 move">
-                              <button className = "btns" onClick={() => updateQuantity(time.id, -1)}><span>-</span></button>
+                              <button className = "btns" ><span>-</span></button>
                                  <p className = "number">{time.quantity}</p>
                               <button className = "btnss" onClick={() => updateQuantity(time.id, 1)}><span>+</span></button>
                           </div> 

@@ -48,21 +48,6 @@ const Order = () => {
                   </div>
               </div>
 
-              <div className = "d-flex align-items-center my-3 ">
-                  <div className = "imagess">
-                      <img src= {elegance} alt="frank-img" className = "imgs"/>
-                  </div>
-                  <div className = " d-flex justify-content-between align-items-center wordss">
-                      <div>
-                         <p className = "ralph">Elegance Essence</p>
-                         <p className = "prices">2x <span className = "span-color"> N3,000</span></p>
-                      </div>
-                      <div>
-                          <p className = "count">N6,000</p>
-                      </div>
-                  </div>
-              </div>
-
               {/* total order */}
               <div className = "d-flex justify-content-between align-items-center py-3">
                   <p className = "texts">Order Total</p>

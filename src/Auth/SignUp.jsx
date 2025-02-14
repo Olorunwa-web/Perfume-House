@@ -6,7 +6,7 @@ import * as yup from "yup";
 import { signUpSchema } from '../lib/ValidationSchema'
 import {Link} from 'react-router-dom'
 import or from '../assets/Frame 115.svg'
-  
+import google from '../assets/🦆 icon _google_.svg'
 
 
 const SignUp = () => {
@@ -40,14 +40,14 @@ const SignUp = () => {
                          <h1>Get Started</h1>
                          <p>Lets get started by filling out the information below</p>
                          {/* full name */}
-                         <div className = "d-md-flex align-items-center justify-content-between gap-5 py-2">
-                             <div  className = "py-2">
+                         <div className = "d-flex align-items-center justify-content-between omo gap-5 py-2">
+                             <div  className = "">
                                  <label htmlFor="firstname">First Name</label>
                                  <input type="text" placeholder = "Enter Name" className = "input-group" {...register("firstName")}/>
                                  <span className = "spans">{errors.firstName?.message}</span>
                              </div>
 
-                             <div className = "pt-2">
+                             <div className = "">
                                  <label htmlFor="lastname">Last Name</label>
                                  <input type="text" placeholder = "Enter Name" className = "input-group" {...register("lastName")}/>
                                  <span className = "spans">{errors.lastName?.message}</span>
@@ -87,11 +87,11 @@ const SignUp = () => {
                          </div>
 
                          <div className = "or">
-                             <img src= {or} alt="or-image"/>
+                             <img src= {or} alt="or-image" className = 'or-image'/>
                          </div>
 
                          <div className = "py-2">
-                             <button className = "w-100 bttn2 ">Continue with Google</button>
+                             <button className = "w-100 bttn2 "><img src= {google} alt="" className = 'google'/> Continue with Google</button>
                          </div>
 
                          <div className = "account">

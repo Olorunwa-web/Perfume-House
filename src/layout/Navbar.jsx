@@ -7,7 +7,7 @@ import OffCanvass from '../lib/OffCanvass';
 const Navbar = () => {
     return (
         <>
-           <nav className = "container py-4 d-flex justify-content-between align-items-center">
+           <nav className = "container py-3 d-flex justify-content-between align-items-center border-line position-sticky top-0 w-100 h-100">
                <div className = 'd-flex align-items-center gap-2'>
                    <img src= {navlogo} alt="nav-logo"/>
                    <h2 className = 'd-none d-lg-block'>Perfume House</h2>

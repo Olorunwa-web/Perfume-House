@@ -6,6 +6,8 @@ import * as yup from "yup";
 import { signInSchema } from '../lib/ValidationSchema'
 import { Link } from 'react-router-dom';
 import or from '../assets/Frame 115.svg';
+import google from '../assets/🦆 icon _google_.svg'
+
 const SignIn = () => {
     const {
         register,
@@ -66,14 +68,14 @@ const SignIn = () => {
                          </div>
                          {/* button */}
                          <div className = "py-2">
-                            <button className = "w-100 bttn">Sign Up</button>
+                            <button className = "w-100 bttn">Sign In</button>
                          </div>
-                         <div className = 'or'>
-                             <img src= {or} alt="or-image"/>
+                         <div className = 'or w-100'>
+                             <img src= {or} alt="or-image" className = 'or-image'/>
                          </div>
 
                          <div className = "py-2">
-                             <button className = "w-100 bttn3 ">Continue with Google</button>
+                             <button className = "w-100 bttn3 "><img src= {google} alt="" className = 'google'/> Continue with Google</button>
                          </div>
 
                          <div className = "account">
